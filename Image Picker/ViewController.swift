@@ -19,8 +19,10 @@ class ViewController: UIViewController {
         let controller = UIAlertController()
         controller.title = "Test alert"
         controller.message = "This is a test"
+        self.dismissViewControllerAnimated(true, completion: nil)
         
-       self.presentViewController(controller, animated: true, completion: nil)
+        self.presentViewController(controller, animated: true, completion: nil)
+        
     }
 }
 
