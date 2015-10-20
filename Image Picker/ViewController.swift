@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Image Picker
 //
-//  Created by Vinh Vu on 10/18/15.
+//  Created by vtv on 10/18/15.
 //  Copyright © 2015 bhag. All rights reserved.
 //
 
@@ -14,9 +14,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func experiment(sender: AnyObject) {
-    let nextController = UIImagePickerController()
-    self.presentViewController(nextController, animated: true, completion: nil)
+    @IBAction func experiment() {
+    
+        let image = UIImage()
+        let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+        self.presentViewController(controller, animated: true, completion: nil)
     }
 }
 
